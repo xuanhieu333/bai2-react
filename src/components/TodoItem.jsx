@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import "./style.scss"
 import moment from "moment"
 const TodoItem = (props) => {
     const { todo, deleteTodo } = props;

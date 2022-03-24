@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .App{
-  width:800px;
+  width:1000px;
   margin: 50px auto;
   height:400px;
   border: 3px solid;
@@ -21,9 +21,43 @@ text-transform: uppercase;
 
 /* } */
 .body__left{
-  width:400px;
+  width:500px;
   text-align: center;
+  margin-top: 20px;
 }
+.body__left--content > label {
+margin-left: -8px;
+}
+
+.body__left--content > input {
+  margin-left: 5px;
+  border-radius: 5px;
+  width: 200px;
+  height:25px;
+}
+
+.body__left--date > label {
+  margin-left: 10px;
+}
+
+.body__left--date > input {
+  margin-left: 3px;
+  border-radius: 5px;
+  width: 150px;
+  height:25px;
+}
+
+.body__left--date,.body__left--content{
+  display: inline-block;
+  margin:5px 30px;
+} 
+.body__left >button{
+  margin-left:-5px;
+}
+
+
+
+
 .body__right{
   width: 400px;
   min-height:300px;
