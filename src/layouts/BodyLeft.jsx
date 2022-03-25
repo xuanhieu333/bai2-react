@@ -47,15 +47,17 @@ const BodyLeft = ({ addTodo, listTodo }) => {
     return (
         <form className="body__left" onSubmit={handleSubmit}>
             <div className="body__left--content">
-                <label>Nội Dung :</label>
+                <label>Nội Dung:</label>
                 <input value={valueInput} type="text" placeholder="Nhập nôi dung cần nhắc" required onChange={(e) => setValueInput(e.target.value)} />
             </div>
-            <div className="body__left--date">
-                <label>Ngày nhắc :</label>
-                <input value={valueInputDate} type="date" required onChange={(e) => setValueInputDate(e.target.value)} />
+            <div className="body__left-block">
+                <div className="body__left--date">
+                    <label>Ngày nhắc:</label>
+                    <input value={valueInputDate} type="date" required onChange={(e) => setValueInputDate(e.target.value)} />
+                </div>
+                <button className="body__left--btn"
+                    type="submit">Lưu ngay</button>
             </div>
-            <button className="body__left--btn"
-                type="submit">Lưu ngay</button>
         </form>
     );
 }
