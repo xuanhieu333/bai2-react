@@ -41,10 +41,10 @@ function App() {
   return (
     <div className="App">
       <h3>Nhắc nhở ngày quan trọng</h3>
-      {/* <div className="body"> */}
-      <BodyLeft addTodo={addTodo} listTodo={listTodo} />
-      <BodyRight listTodo={listTodo} deleteTodo={deleteTodo} />
-      {/* </div> */}
+      <div className="body">
+        <BodyLeft addTodo={addTodo} listTodo={listTodo} />
+        <BodyRight listTodo={listTodo} deleteTodo={deleteTodo} />
+      </div>
 
     </div>
   );
